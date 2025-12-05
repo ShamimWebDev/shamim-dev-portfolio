@@ -1,0 +1,125 @@
+[
+  {
+    "id": 1,
+    "title": "Creatify – A Creative Artwork Showcase Platform",
+    "description": "A modern platform for artists to upload, explore, and showcase artwork with full CRUD and a clean UI.",
+    "fullDescription": "Creatify is a modern online platform where artists can upload, explore, and showcase their creative artworks. It provides a beautiful, minimal UI for discovering art, connecting with creators, and curating personal favorites.",
+    "image": "/creatify.PNG",
+    "tech": ["React", "Firebase", "MongoDB", "Express", "Tailwind"],
+    "liveUrl": "https://creatify-art.web.app",
+    "githubUrl": "https://github.com/ShamimWebDev/creatify-client",
+    "featured": true,
+    "features": [
+      "Explore & Showcase Art: Browse artworks shared by other creators and upload your own.",
+      "Favorites System: Add or remove artworks from your personalized favorites gallery.",
+      "Secure Authentication: Firebase Email/Password & Google Login with real-time user session.",
+      "Full CRUD Support: Add, update, or delete your uploaded artworks easily.",
+      "Theme Toggle: Switch between Dark and Light modes with localStorage persistence.",
+      "Animations & UI: Smooth transitions using React Awesome Reveal & React Simple Typewriter.",
+      "Search & Filter: Quickly find artworks by title, artist, or category.",
+      "Like System: Express appreciation by liking artworks (MongoDB $inc for like count).",
+      "Responsive Design: Fully optimized for mobile, tablet, and desktop users."
+    ],
+    "architecture": [
+      "Frontend: React 18, React Router DOM 6",
+      "Styling: Tailwind CSS, DaisyUI",
+      "Animations: Motion, React Awesome Reveal, React Simple Typewriter",
+      "Auth: Firebase",
+      "Backend: MongoDB (for CRUD & Like system)",
+      "UI Components: React Icons, React Toastify, React Spinners",
+      "Build Tool: Vite"
+    ],
+    "gettingStarted": [
+      "Clone the repository: git clone https://github.com/ShamimWebDev/creatify-client.git",
+      "Install dependencies: npm install",
+      "Set up environment variables: Create a .env file and add Firebase config",
+      "Start the development server: npm run dev"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Next-Ecommerce – Modern E-Commerce Platform",
+    "description": "A Next.js e-commerce application with separate Express + MongoDB backend, authentication, and admin panel.",
+    "fullDescription": "A modern, responsive e-commerce web application built with Next.js 16 (App Router), featuring a complete shopping experience with product management, authentication, and a beautifully designed UI following industry standards.",
+    "image": "/Next-Ecommerce.PNG",
+    "tech": ["Next.js", "Express", "MongoDB", "NextAuth", "Tailwind"],
+    "liveUrl": "https://next-ecommerce190.vercel.app/",
+    "githubUrl": "https://github.com/ShamimWebDev/next-ecommerce-client",
+    "featured": true,
+    "features": [
+      "Product Catalog: Browse products with high-quality images, detailed descriptions, and pricing",
+      "Advanced Search & Filtering: Search by name with real-time highlighting, filter by category and price range",
+      "Wishlist System: Save favorite items for later purchase",
+      "Shopping Cart: Add items, manage quantities, and proceed to checkout",
+      "NextAuth.js Integration: Secure authentication with credentials and OAuth",
+      "Admin Dashboard: Manage product inventory with an intuitive interface",
+      "Image Upload: Support for product images via URL",
+      "Dark Mode Ready: CSS variable-based theming system",
+      "Mobile Optimized: Touch-friendly interfaces and responsive layouts"
+    ],
+    "architecture": [
+      "Framework: Next.js 16 with App Router",
+      "UI Library: React 19",
+      "Styling: Tailwind CSS v4 with custom configuration",
+      "State Management: React Hooks (useState, useEffect)",
+      "Authentication: NextAuth.js with credentials and OAuth providers",
+      "Backend: Express.js + MongoDB (separate repository)"
+    ],
+    "dependencies": {
+      "next": "^16.0.3",
+      "react": "^19.2.0",
+      "axios": "^1.13.2",
+      "next-auth": "^4.24.13",
+      "tailwindcss": "^4.1.17"
+    },
+    "gettingStarted": [
+      "Clone the repository: git clone https://github.com/ShamimWebDev/next-ecommerce-client.git",
+      "Install dependencies: npm install",
+      "Set up environment variables in .env.local",
+      "Run the development server: npm run dev"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "GameHub – Indie Games Platform",
+    "description": "GameHub is a modern web app designed to help users explore, discover, and interact with their favorite games.",
+    "fullDescription": "GameHub is a modern web app designed to help users explore, discover, and interact with their favorite games. It provides a smooth user experience with authentication, game browsing, and responsive design — built using React and Tailwind CSS.",
+    "image": "/game-hum.PNG",
+    "tech": ["React", "Vite", "Tailwind CSS", "Firebase", "Framer Motion"],
+    "liveUrl": "https://game-hub-190.web.app/",
+    "githubUrl": "https://github.com/ShamimWebDev/game-hub",
+    "featured": true,
+    "features": [
+      "User Authentication: Sign in with Email & Password, Google Auth, Forgot Password.",
+      "Modern UI/UX: Fully responsive layout, Clean and interactive design, Smooth animations.",
+      "Game Library: Browse popular games, Interactive cards and hover effects.",
+      "Optimized Development Setup: Vite for fast builds, Reusable components, Global Error Boundary, SEO Optimized."
+    ],
+    "architecture": [
+      "Frontend: React.js",
+      "Build Tool: Vite",
+      "Styling: Tailwind CSS",
+      "Animations: Framer Motion",
+      "Auth: Firebase",
+      "Routing: React Router DOM",
+      "State Management: Context API"
+    ],
+    "dependencies": {
+      "react-router-dom": "^6.x",
+      "motion": "^10.x",
+      "react-icons": "^4.x",
+      "react-toastify": "^9.x",
+      "firebase": "^10.x",
+      "tailwindcss": "^3.x",
+      "daisyui": "^4.x",
+      "react-spinners": "^0.x"
+    },
+    "gettingStarted": [
+      "Clone the repository: git clone https://github.com/ShamimWebDev/game-hub.git",
+      "Install dependencies: npm install",
+      "Set up Environment Variables: Create .env file with Firebase config",
+      "Run the development server: npm run dev",
+      "Build for production: npm run build"
+    ]
+  }
+]
