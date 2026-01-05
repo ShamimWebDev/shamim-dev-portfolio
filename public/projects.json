@@ -20,6 +20,16 @@
       "Like System: Express appreciation by liking artworks (MongoDB $inc for like count).",
       "Responsive Design: Fully optimized for mobile, tablet, and desktop users."
     ],
+    "challenges": [
+      "Implementing real-time updates for art gallery interactions without performance lag.",
+      "Managing complex state for filters and search functionality across large datasets.",
+      "Ensuring seamless theme switching without FOUC (Flash of Unstyled Content)."
+    ],
+    "futurePlans": [
+      "Implement AI-based art recommendations.",
+      "Add direct messaging between artists and admirers.",
+      "Introduce NFT minting capability for digital art."
+    ],
     "architecture": [
       "Frontend: React 18, React Router DOM 6",
       "Styling: Tailwind CSS, DaisyUI",
@@ -56,6 +66,16 @@
       "Image Upload: Support for product images via URL",
       "Dark Mode Ready: CSS variable-based theming system",
       "Mobile Optimized: Touch-friendly interfaces and responsive layouts"
+    ],
+    "challenges": [
+      "Synchronizing cart state between local storage and database for authenticated users.",
+      "Handling complex product filtering logic efficiently on the backend.",
+      "Securing admin routes and preventing unauthorized access to inventory management."
+    ],
+    "futurePlans": [
+      "Integration with more payment gateways (e.g., PayPal, bkash).",
+      "Advanced analytics dashboard for sales and user behavior.",
+      "Multi-vendor support allowing other sellers to register."
     ],
     "architecture": [
       "Framework: Next.js 16 with App Router",
@@ -95,6 +115,16 @@
       "Game Library: Browse popular games, Interactive cards and hover effects.",
       "Optimized Development Setup: Vite for fast builds, Reusable components, Global Error Boundary, SEO Optimized."
     ],
+    "challenges": [
+      "Integrating third-party game APIs and handling rate limits.",
+      "Designing a performant and responsive grid layout for game covers.",
+      "State management complexities with user favorites and library organization."
+    ],
+    "futurePlans": [
+      "Add community features like forums or chat rooms.",
+      "Implement a game review and rating system.",
+      "Create user profiles with gaming achievements."
+    ],
     "architecture": [
       "Frontend: React.js",
       "Build Tool: Vite",
@@ -120,6 +150,159 @@
       "Set up Environment Variables: Create .env file with Firebase config",
       "Run the development server: npm run dev",
       "Build for production: npm run build"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Care.xyz – Baby Sitting & Elderly Care Service Platform",
+    "description": "A comprehensive web application providing reliable and trusted care services for children, elderly, and family members.",
+    "fullDescription": "Care.xyz is a comprehensive web application providing reliable and trusted care services for children, elderly, and family members. Users can find, book, and manage caretakers for various purposes including babysitting, elderly care, and special home care services.",
+    "image": "/care-xyz.PNG",
+    "tech": ["Next.js", "Firebase", "MongoDB", "Nodemailer", "Tailwind"],
+    "liveUrl": "https://care-first-ten.vercel.app/",
+    "githubUrl": "https://github.com/ShamimWebDev/care-first",
+    "featured": true,
+    "features": [
+      "User Authentication: Email/Password and Google OAuth integration using Firebase",
+      "Service Catalog: Three main caregiving services - Baby Care, Elderly Care, and Sick People Care",
+      "Dynamic Booking System: Book services by hours or days with live price calculation",
+      "Location Selection: Bangladesh-specific cascading dropdowns (Division → District → City → Area)",
+      "Booking Management: Track booking status - Pending, Confirmed, Completed, Cancelled",
+      "Email Invoices: Automated invoice sending via Nodemailer integration",
+      "Admin Dashboard: Comprehensive admin panel for managing bookings and services",
+      "Service Reviews: User ratings and reviews system",
+      "Responsive Design: Fully responsive across mobile, tablet, and desktop",
+      "Modern UI/UX: Premium design with gradients, animations, and glassmorphism effects"
+    ],
+    "challenges": [
+      "Calculating live pricing based on dynamic service durations and types.",
+      "Implementing the correct location cascading logic for Bangladesh districts.",
+      "Ensuring Nodemailer reliability for automated invoice delivery."
+    ],
+    "futurePlans": [
+      "Real-time tracking of caregivers via Maps.",
+      "In-app video calling for interviews before booking.",
+      "Mobile application (React Native) for easier access."
+    ],
+    "architecture": [
+      "Framework: Next.js 16.1.1+ with App Router",
+      "Authentication: Firebase Authentication",
+      "Database: MongoDB for data persistence",
+      "Styling: Tailwind CSS v4",
+      "Email Service: Nodemailer for invoice sending",
+      "Protected Routes: Authentication state persistence",
+      "SEO: Optimized with dynamic metadata",
+      "Real-time Updates: React hooks for live data"
+    ],
+    "gettingStarted": [
+      "Clone the repository: git clone https://github.com/ShamimWebDev/care-first.git",
+      "Install dependencies: npm install",
+      "Create .env.local file with Firebase and MongoDB configuration",
+      "Add email credentials for Nodemailer (EMAIL_USER and EMAIL_PASS)",
+      "Run the development server: npm run dev",
+      "Open browser at http://localhost:3000"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "ScholarStream - Scholarship Management Platform",
+    "description": "A comprehensive web application bridging the gap between students seeking financial aid and scholarship providers.",
+    "fullDescription": "ScholarStream is a comprehensive web application designed to bridge the gap between students seeking financial aid and scholarship providers. It simplifies the scholarship application process, making it transparent, efficient, and accessible for everyone.",
+    "image": "/scholarstream.PNG",
+    "tech": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Stripe",
+      "Firebase",
+      "Tailwind"
+    ],
+    "liveUrl": "https://scholar-stream-client.vercel.app",
+    "githubUrl": "https://github.com/ShamimWebDev/scholarstream-client",
+    "featured": true,
+    "features": [
+      "Smart Search: Find scholarships tailored to your academic profile",
+      "Easy Application: Apply to multiple scholarships with a few clicks",
+      "Dashboard: Track application status (Pending, Processing, Completed) in real-time",
+      "Reviews: Read and write reviews for universities and scholarship programs",
+      "Secure Payments: Integrated Stripe payment gateway for application fees",
+      "Application Management: Moderators can review, approve, or reject scholarship applications",
+      "User Management: Admin controls for managing user roles",
+      "Analytics: Insights into platform usage and application trends"
+    ],
+    "challenges": [
+      "Handling secure file uploads for scholarship documents.",
+      "Implementing complex search algorithms to match students with suitable scholarships.",
+      "Managing different user roles (Student, Moderator, Admin) securely."
+    ],
+    "futurePlans": [
+      "AI-powered scholarship matching engine.",
+      "Integration with university application portals.",
+      "Alumni mentorship program feature."
+    ],
+    "architecture": [
+      "Frontend: React.js, Tailwind CSS, DaisyUI, Framer Motion",
+      "Backend: Node.js, Express.js, MongoDB",
+      "Authentication: Firebase Auth, JWT",
+      "Payment: Stripe.js"
+    ],
+    "gettingStarted": [
+      "Clone the repository",
+      "Frontend Setup: npm install && npm run dev",
+      "Backend Setup: npm install && npm start",
+      "Set up environment variables for both Client and Server"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Micro-Task and Earning Platform",
+    "description": "A modern, responsive web application for micro-tasking where buyers can post tasks and workers can earn coins.",
+    "fullDescription": "A modern, responsive web application for micro-tasking where buyers can post tasks and workers can earn coins by completing them. Featuring a sleek dark-themed UI with premium animations and real-time notifications.",
+    "image": "/micro-task.PNG",
+    "tech": [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Firebase",
+      "Stripe",
+      "Framer Motion"
+    ],
+    "liveUrl": "https://micro-task-client.vercel.app/",
+    "githubUrl": "https://github.com/ShamimWebDev/Micro-Task-client",
+    "featured": true,
+    "features": [
+      "User Authentication: Secure Login/Registration with Firebase and Google Sign-in.",
+      "Role-Based Dashboards: Specific views for Workers, Buyers, and Admins.",
+      "Dynamic Earning System: Workers earn coins (20 coins = $1) convertible to real money.",
+      "Task Management: Buyers can create and manage tasks; Admins oversee everything.",
+      "Real-time Notifications: Alerts for task approvals, rejections, and payments.",
+      "Responsive Design: Optimized for all devices using Tailwind CSS.",
+      "Pagination: Server-side pagination for submission history."
+    ],
+    "challenges": [
+      "Ensuring race-condition free coin transactions and balance updates.",
+      "Implementing real-time notifications for task updates without overloading the server.",
+      "Building a fair and automated dispute resolution system."
+    ],
+    "futurePlans": [
+      "Crypto withdrawal options.",
+      "Referral system for users to earn bonus coins.",
+      "Premium membership tiers with lower withdrawal fees."
+    ],
+    "architecture": [
+      "Frontend: React (Vite)",
+      "Styling: Tailwind CSS v4",
+      "Animations: Framer Motion",
+      "Authentication: Firebase Authentication",
+      "State Management: React Context API",
+      "Data Fetching: Axios with Interceptors"
+    ],
+    "gettingStarted": [
+      "Clone the repository: git clone https://github.com/ShamimWebDev/Micro-Task-client",
+      "Install dependencies: npm install",
+      "Set up environment variables (Firebase config, ImgBB key)",
+      "Run the development server: npm run dev"
     ]
   }
 ]

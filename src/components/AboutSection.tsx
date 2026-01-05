@@ -125,7 +125,7 @@ export function AboutSection() {
                   transition={{ delay: 0.7 }}
                   whileHover={{ scale: 1.05 }}
                 >
-                  <p className="text-4xl font-bold text-gradient">10+</p>
+                  <p className="text-4xl font-bold text-gradient">13+</p>
                   <p className="text-muted-foreground text-sm font-medium">
                     Projects Completed
                   </p>

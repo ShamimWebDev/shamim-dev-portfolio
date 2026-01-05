@@ -9,6 +9,8 @@ import {
   Box,
   Terminal,
   CheckCircle2,
+  AlertTriangle,
+  Rocket,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/Navbar";
@@ -112,7 +114,7 @@ export default function ProjectDetail() {
 
               <div className="flex items-center gap-2 text-muted-foreground mb-8">
                 <Calendar size={18} />
-                <span>2024</span>
+                <span>2025</span>
               </div>
 
               <div className="prose prose-invert max-w-none mb-12">
@@ -146,6 +148,48 @@ export default function ProjectDetail() {
                   </ul>
                 </div>
               )}
+
+              {/* Challenges & Future Plans */}
+              <div className="grid md:grid-cols-2 gap-8 mb-12">
+                {project.challenges && (
+                  <div className="glass rounded-xl p-6">
+                    <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
+                      <AlertTriangle className="text-primary" size={20} />{" "}
+                      Challenges Faced
+                    </h2>
+                    <ul className="space-y-2">
+                      {project.challenges.map((challenge, index) => (
+                        <li
+                          key={index}
+                          className="flex items-start gap-2 text-sm text-muted-foreground"
+                        >
+                          <span className="text-primary mt-1">•</span>
+                          {challenge}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {project.futurePlans && (
+                  <div className="glass rounded-xl p-6">
+                    <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
+                      <Rocket className="text-primary" size={20} /> Future Plans
+                    </h2>
+                    <ul className="space-y-2">
+                      {project.futurePlans.map((plan, index) => (
+                        <li
+                          key={index}
+                          className="flex items-start gap-2 text-sm text-muted-foreground"
+                        >
+                          <span className="text-primary mt-1">•</span>
+                          {plan}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
 
               {/* Architecture */}
               {project.architecture && (

@@ -10,7 +10,7 @@ export interface Project {
   fullDescription?: string;
   features?: string[];
   challenges?: string[];
-  improvements?: string[];
+  futurePlans?: string[];
   architecture?: string[];
   dependencies?: Record<string, string>;
   gettingStarted?: string[];
