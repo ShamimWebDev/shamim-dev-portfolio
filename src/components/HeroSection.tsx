@@ -286,15 +286,16 @@ export function HeroSection() {
                 asChild
               >
                 <a
-                  href="https://drive.google.com/uc?export=download&id=1b2sY9hial-Kq17njyfG9_11577ajtbzd"
-                  download
+                  href="https://drive.google.com/file/d/1xItoFoupAn40sBGSdl86dBMcjNt7NaI2/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <span className="relative z-10 flex items-center">
                     <Download
                       className="mr-2 group-hover:translate-y-1 transition-transform"
                       size={18}
                     />
-                    Download CV
+                    View Resume
                   </span>
                   <div className="absolute inset-0 bg-primary/5 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
                 </a>
