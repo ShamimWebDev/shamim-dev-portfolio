@@ -164,10 +164,10 @@ export function ProjectsSection() {
   }
 
   return (
-    <section id="projects" className="py-24 relative overflow-hidden">
+    <section id="projects" className="py-16 relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
-      <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent" />
+      <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-500/10 to-transparent" />
 
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
@@ -177,16 +177,16 @@ export function ProjectsSection() {
           transition={{ duration: 0.8 }}
         >
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <motion.span
-              className="text-primary font-medium"
+              className="text-primary font-bold tracking-widest uppercase text-sm"
               initial={{ opacity: 1 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
               My Work
             </motion.span>
-            <h2 className="text-3xl md:text-5xl font-bold mt-2">
+            <h2 className="text-4xl md:text-6xl font-bold mt-4 tracking-tight">
               Featured <span className="text-gradient">Projects</span>
             </h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">

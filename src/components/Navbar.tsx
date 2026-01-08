@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, MousePointer2, MousePointer } from "lucide-react";
+import { Menu, X, MousePointer2, MousePointer, Terminal } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useMouseEffect } from "@/contexts/MouseEffectContext";
@@ -77,17 +77,44 @@ export function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "glass-strong py-3 shadow-lg" : "bg-transparent py-5"
+        isScrolled
+          ? "glass-strong py-2 shadow-sm border-b border-border/40"
+          : "bg-transparent py-4"
       }`}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <motion.a
           href="/#home"
-          className="text-2xl font-bold text-gradient relative z-10"
-          whileHover={{ scale: 1.05 }}
+          className="flex items-center gap-3 group relative z-10"
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
           onClick={(e) => handleNavClick(e, "/#home", "home")}
         >
-          {"<Dev />"}
+          {/* Logo Icon Container */}
+          <div className="relative flex items-center justify-center">
+            {/* Rotating Background (Hover only) */}
+            <div className="absolute -inset-1.5 bg-gradient-to-tr from-primary via-accent to-primary rounded-xl opacity-0 group-hover:opacity-40 blur-sm group-hover:animate-spin-slow transition-opacity duration-500" />
+
+            {/* Main Icon Box */}
+            <div className="relative w-10 h-10 rounded-xl bg-secondary/80 backdrop-blur-xl border border-white/10 flex items-center justify-center text-primary group-hover:text-foreground transition-all duration-300 overflow-hidden shadow-2xl">
+              <Terminal size={20} spellCheck={false} />
+              {/* Inner Glow */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+          </div>
+
+          {/* Logo Text */}
+          <div className="flex flex-col leading-none">
+            <span className="text-2xl font-bold tracking-tight font-display bg-clip-text text-transparent bg-white group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-accent transition-all duration-500">
+              SHAMIM
+            </span>
+            <div className="flex items-center gap-1.5 mt-1">
+              <span className="text-[9px] font-bold tracking-[0.3em] text-muted-foreground uppercase">
+                MERN Developer
+              </span>
+              <div className="w-1 h-1 rounded-full bg-primary group-hover:animate-pulse" />
+            </div>
+          </div>
         </motion.a>
 
         {/* Desktop Navigation */}

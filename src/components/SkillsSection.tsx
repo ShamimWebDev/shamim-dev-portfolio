@@ -82,11 +82,11 @@ export function SkillsSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="skills" className="py-24 relative overflow-hidden">
+    <section id="skills" className="py-16 relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(174_72%_56%_/_0.05),_transparent_70%)]" />
-      <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
-      <div className="absolute bottom-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(var(--primary)_/_0.05),_transparent_70%)]" />
+      <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent" />
+      <div className="absolute bottom-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-500/10 to-transparent" />
 
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
@@ -96,22 +96,21 @@ export function SkillsSection() {
           transition={{ duration: 0.8 }}
         >
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <motion.span
-              className="text-primary font-medium"
+              className="text-primary font-bold tracking-widest uppercase text-sm"
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.2 }}
             >
               My Expertise
             </motion.span>
-            <h2 className="text-3xl md:text-5xl font-bold mt-2">
+            <h2 className="text-4xl md:text-6xl font-bold mt-4 tracking-tight">
               Skills & <span className="text-gradient">Technologies</span>
             </h2>
-            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              I'm constantly learning and improving my skills. Here are the
-              technologies I work with on a daily basis to build amazing
-              products.
+            <p className="text-muted-foreground mt-6 max-w-2xl mx-auto text-lg">
+              Expertise built through hands-on experience and constant learning.
+              Here are the core technologies powering my development workflow.
             </p>
           </div>
 

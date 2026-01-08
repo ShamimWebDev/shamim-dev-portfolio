@@ -213,25 +213,25 @@ export function HeroSection() {
             </motion.div>
 
             <motion.h1
-              className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+              className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-[1.1] tracking-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
               <span className="text-foreground">I'm </span>
-              <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_auto] animate-gradient">
+              <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-400 to-primary bg-[length:200%_auto] animate-gradient">
                 Shamim Ahmmed
               </span>
             </motion.h1>
 
             <motion.div
-              className="text-xl md:text-2xl font-medium text-muted-foreground mb-8 h-8"
+              className="text-xl md:text-2xl font-semibold text-muted-foreground mb-8 h-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
             >
-              <span className="text-foreground">I am a </span>
-              <span className="text-primary">
+              <span className="text-foreground/80">I am a </span>
+              <span className="text-primary font-bold">
                 <Typewriter
                   words={[
                     "MERN Stack Developer",
@@ -241,16 +241,16 @@ export function HeroSection() {
                   ]}
                   loop={0}
                   cursor
-                  cursorStyle="_"
+                  cursorStyle="|"
                   typeSpeed={70}
                   deleteSpeed={50}
-                  delaySpeed={1000}
+                  delaySpeed={1500}
                 />
               </span>
             </motion.div>
 
             <motion.p
-              className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed"
+              className="text-muted-foreground/80 text-lg md:text-xl mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}

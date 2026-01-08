@@ -102,9 +102,9 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_hsl(174_72%_56%_/_0.08),_transparent_60%)]" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10" />
+    <section id="contact" className="py-16 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_hsl(var(--primary)_/_0.08),_transparent_60%)]" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-[120px] -z-10" />
 
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
@@ -114,21 +114,21 @@ export function ContactSection() {
           transition={{ duration: 0.8 }}
         >
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <motion.span
-              className="text-primary font-medium"
+              className="text-primary font-bold tracking-widest uppercase text-sm"
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.2 }}
             >
               Get In Touch
             </motion.span>
-            <h2 className="text-3xl md:text-5xl font-bold mt-2">
+            <h2 className="text-4xl md:text-6xl font-bold mt-4 tracking-tight">
               Contact <span className="text-gradient">Me</span>
             </h2>
-            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Have a project in mind or want to discuss opportunities? Feel free
-              to reach out. I'd love to hear from you!
+            <p className="text-muted-foreground mt-6 max-w-2xl mx-auto text-lg leading-relaxed">
+              Have a project in mind or want to discuss opportunities? I'm
+              always open to new challenges and creative collaborations.
             </p>
           </div>
 

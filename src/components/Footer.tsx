@@ -1,5 +1,13 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Twitter, Facebook, Heart, Mail } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Twitter,
+  Facebook,
+  Heart,
+  Mail,
+  Terminal,
+} from "lucide-react";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/ShamimWebDev", label: "GitHub" },
@@ -39,20 +47,39 @@ export function Footer() {
   };
 
   return (
-    <footer className="relative py-12 border-t border-white/5 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-primary/5 rounded-full blur-[100px] -z-10" />
+    <footer className="relative py-16 border-t border-white/5 overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-primary/10 rounded-full blur-[120px] -z-10" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col items-center">
           {/* Logo */}
           <motion.a
             href="/#home"
-            className="text-3xl font-bold text-gradient mb-8"
+            className="flex items-center gap-3 group relative mb-8"
             whileHover={{ scale: 1.05 }}
             onClick={(e) => handleNavClick(e, "/#home")}
           >
-            {"<Dev />"}
+            {/* Logo Icon Container */}
+            <div className="relative flex items-center justify-center">
+              <div className="absolute -inset-1.5 bg-gradient-to-tr from-primary via-accent to-primary rounded-xl opacity-20 group-hover:opacity-40 blur-sm group-hover:animate-spin-slow transition-opacity duration-500" />
+              <div className="relative w-12 h-12 rounded-xl bg-secondary/80 backdrop-blur-xl border border-white/10 flex items-center justify-center text-primary group-hover:text-foreground transition-all duration-300 overflow-hidden shadow-2xl">
+                <Terminal size={24} />
+              </div>
+            </div>
+
+            {/* Logo Text */}
+            <div className="flex flex-col leading-none text-left">
+              <span className="text-3xl font-bold tracking-tight font-display bg-clip-text text-transparent bg-white group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-accent transition-all duration-500">
+                SHAMIM
+              </span>
+              <div className="flex items-center gap-2 mt-1">
+                <span className="text-[10px] font-bold tracking-[0.4em] text-muted-foreground uppercase">
+                  MERN Developer
+                </span>
+                <div className="w-1.5 h-1.5 rounded-full bg-primary group-hover:animate-pulse" />
+              </div>
+            </div>
           </motion.a>
 
           {/* Navigation */}

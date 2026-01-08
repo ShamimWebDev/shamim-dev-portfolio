@@ -40,10 +40,10 @@ export function AboutSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" className="py-24 relative overflow-hidden">
+    <section id="about" className="py-16 relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -z-10" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-[120px] -z-10" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/10 rounded-full blur-[120px] -z-10" />
 
       <div className="container mx-auto px-6">
         <motion.div
@@ -53,21 +53,21 @@ export function AboutSection() {
           transition={{ duration: 0.8 }}
         >
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <motion.span
-              className="text-primary font-medium"
+              className="text-primary font-bold tracking-widest uppercase text-sm"
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.2 }}
             >
               Career Objective
             </motion.span>
-            <h2 className="text-3xl md:text-5xl font-bold mt-2">
+            <h2 className="text-4xl md:text-6xl font-bold mt-4 tracking-tight">
               About <span className="text-gradient">Me</span>
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Side - Image & Stats */}
             <motion.div
               className="relative"
@@ -76,58 +76,58 @@ export function AboutSection() {
               transition={{ delay: 0.3, duration: 0.8 }}
             >
               <div className="relative max-w-md mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-2xl transform rotate-6" />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-purple-500/30 rounded-3xl blur-3xl transform rotate-3" />
 
-                <div className="relative aspect-square rounded-3xl overflow-hidden glass border border-white/10 shadow-2xl">
+                <div className="relative aspect-square rounded-3xl overflow-hidden glass border border-white/5 shadow-2xl">
                   <div className="w-full h-full bg-gradient-to-br from-secondary/50 to-muted/50 flex items-center justify-center relative overflow-hidden group">
-                    <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20" />
+                    <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
                     <Code2
-                      size={120}
-                      className="text-primary/40 group-hover:scale-110 transition-transform duration-700"
+                      size={140}
+                      className="text-primary/20 group-hover:scale-110 transition-transform duration-700"
                     />
 
                     {/* Floating Icons */}
                     <motion.div
-                      className="absolute top-10 right-10 text-accent/40"
-                      animate={{ y: [0, -10, 0] }}
+                      className="absolute top-12 right-12 text-purple-400/30"
+                      animate={{ y: [0, -15, 0] }}
                       transition={{ duration: 4, repeat: Infinity }}
                     >
-                      <Palette size={40} />
+                      <Palette size={48} />
                     </motion.div>
                     <motion.div
-                      className="absolute bottom-10 left-10 text-primary/40"
-                      animate={{ y: [0, 10, 0] }}
+                      className="absolute bottom-12 left-12 text-primary/30"
+                      animate={{ y: [0, 15, 0] }}
                       transition={{ duration: 5, repeat: Infinity }}
                     >
-                      <Coffee size={40} />
+                      <Coffee size={48} />
                     </motion.div>
                   </div>
                 </div>
 
                 {/* Stats Cards */}
                 <motion.div
-                  className="absolute -bottom-6 -right-6 glass-strong rounded-2xl p-6 shadow-xl border border-white/10"
+                  className="absolute -bottom-8 -right-8 glass-strong rounded-2xl p-8 shadow-2xl border border-white/10"
                   initial={{ opacity: 0, scale: 0.8, y: 20 }}
                   animate={isInView ? { opacity: 1, scale: 1, y: 0 } : {}}
                   transition={{ delay: 0.6 }}
                   whileHover={{ scale: 1.05 }}
                 >
-                  <p className="text-4xl font-bold text-gradient">1+</p>
-                  <p className="text-muted-foreground text-sm font-medium">
+                  <p className="text-5xl font-bold text-gradient">1+</p>
+                  <p className="text-muted-foreground text-xs font-bold uppercase tracking-wider mt-1">
                     Years Experience
                   </p>
                 </motion.div>
 
                 <motion.div
-                  className="absolute -top-6 -left-6 glass-strong rounded-2xl p-6 shadow-xl border border-white/10"
+                  className="absolute -top-8 -left-8 glass-strong rounded-2xl p-8 shadow-2xl border border-white/10"
                   initial={{ opacity: 0, scale: 0.8, y: -20 }}
                   animate={isInView ? { opacity: 1, scale: 1, y: 0 } : {}}
                   transition={{ delay: 0.7 }}
                   whileHover={{ scale: 1.05 }}
                 >
-                  <p className="text-4xl font-bold text-gradient">13+</p>
-                  <p className="text-muted-foreground text-sm font-medium">
-                    Projects Completed
+                  <p className="text-5xl font-bold text-gradient">13+</p>
+                  <p className="text-muted-foreground text-xs font-bold uppercase tracking-wider mt-1">
+                    Projects Done
                   </p>
                 </motion.div>
               </div>
@@ -139,7 +139,7 @@ export function AboutSection() {
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              <h3 className="text-2xl md:text-3xl font-bold mb-6 leading-tight">
+              <h3 className="text-3xl md:text-4xl font-bold mb-8 leading-tight tracking-tight">
                 A Passionate{" "}
                 <span className="text-primary">MERN Stack Developer</span> Based
                 in Bangladesh
