@@ -97,7 +97,7 @@ export function Navbar() {
 
             {/* Main Icon Box */}
             <div className="relative w-10 h-10 rounded-xl bg-secondary/80 backdrop-blur-xl border border-white/10 flex items-center justify-center text-primary group-hover:text-foreground transition-all duration-300 overflow-hidden shadow-2xl">
-              <Terminal size={20} spellCheck={false} />
+              <Terminal size={20} />
               {/* Inner Glow */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
